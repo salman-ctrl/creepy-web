@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Creepster",system-ui;
+}
+
+.card{
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    background-image: url(black-photoshop-background-png-15.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    overflow: hidden;
+}
+
+.card h2{
+    font-size: 40px;
+    color: red;
+    justify-content: end;
+    display: flex;
+    margin-top: 5%;
+    text-shadow: 0 0 5px darkred, 0 5px 10px darkred, -5px 5px 15px darkred;
+    animation: blinkText 0.5s infinite alternate;
+}
+
+.content{
+    top: 55%;
+    transform: translateY(-50%);
+    position: absolute;
+    color: #fff;
+}
+
+
+/* .content h1{
+    font-size: 64px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    width: 0;
+    animation: typing 4s steps(22) forwards, blink 0.5s step-end infinite;
+} */
+
+.content p{
+    font-size: 20px;
+    text-shadow: 5px 5px 15px darkred;
+    margin-bottom: 20px;
+    animation: blinkText 1s infinite alternate;
+}
+
+@keyframes blinkText{
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+    color: red;
+    text-shadow: 0 0 5px darkred, 0 5px 10px darkred, -5px 5px 15px darkred;
+    position: relative;
+    animation: typing 4s steps(22) forwards, blink 0.5s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+
+
+.blood, .blood2,.blood3 ,.blood4{
+     width: 200px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+.blood{
+    top: 65%;
+    left: 25%;
+    transform: translateX(-100%);
+    animation-delay:2s;
+}
+
+.blood2{
+    top: 20%;
+    left: 20%;
+    transform: translateX(-100%);
+    animation-delay: 3s;
+}
+
+.blood3{
+    top: 20%;
+    left: 75%;
+    transform: translateX(-100%);
+    animation-delay: 4s;
+}
+.blood4{
+    top: 1%;
+    left: 1%;
+    transform: translateX(-100%);
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.setan{
+    width: 200px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn forwards;
+    top: 15%;
+    left: 35%;
+    transform: translateX(-50px);
+    animation-delay: 5s;
+}
+
+.carton{
+    width: 200px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn forwards;
+    top: 60%;
+    left: 80%;
+    transform: translateX(-50px);
+    animation-delay: 2s;
+}
+
+.darah{
+    width: 500px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0.5;
+    animation: fadeIn forwards;
+    top: -19px;
+    left: 80%;
+    transform: translateX(-50px);
+    animation-delay: 0;
+}
+
+.setan-gantung{
+    width: 500px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 1;
+    animation: masuk 7s ease-in-out forwards;
+    top: 0; 
+    left: 0;
+    transform: translateY(-50px);
+    animation-delay: 2s;
+}
+
+
+@keyframes hilang {
+    from {
+        opacity: 1; /* Mulai terlihat */
+    }
+    to {
+        opacity: 0; /* Menjadi tidak terlihat */
+    }
+}
+
+@keyframes masuk{
+
+    from{
+        opacity: 0;
+        top: -100%;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }   
+}
+
+
+.darah2{
+    width: 500px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn forwards;
+    top: 10%;
+    left: 35%;
+    transform: translateX(-50px);
+    animation-delay: 0;
+}
+
+.darah-merah{
+    width: 500px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn forwards;
+    top: 65%;
+    left: 80%;
+    transform: translateX(-50px);
+    animation-delay: 0;
+}
+
+.cakar{
+    width: 100px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn forwards;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50px);
+    animation-delay: 0;
+}
+
+.cakar2{
+    width: 100px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn forwards;
+    top: 15%;
+    left: 55%;
+    transform: translateX(-50px);
+    animation-delay: 0;
+}
+
+.hantu{
+    width: 500px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn 7s ease-in-out forwards,blinkhantu 2s ease-in-out infinite;
+    top: 45%;
+    left: 35%;
+    transform: translateX(-50px);
+    animation-delay: 0.5s;
+}
+
+@keyframes blinkhantu{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.kelelawar, .kelelawar3, .kelelawar5 {
+    width: 200px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0; /* Awal transparan */
+    transform: translateX(-50px);
+    animation: fadeout 10s ease-in-out infinite; /* Menambahkan animasi */
+}
+
+
+.kelelawar{
+    top: 10%;
+    right: 0;
+    animation-delay: 2s;
+    animation-play-state: running;
+}
+
+.kelelawar:hover{
+    animation-play-state: paused;
+}
+
+.kelelawar3{
+    top: 15%;
+    right: 0;
+    animation-delay: 4s;
+}
+.kelelawar5{
+    top: 20%;
+    right: 0;
+    animation-delay: 7s;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 0; /* Mulai dari transparan */
+        transform: translateX(100%px); /* Mulai dari posisi ini */
+    }
+    to {
+        opacity: 1; /* Akhirnya muncul sepenuhnya */
+        transform: translateX(-800%); /* Kembali ke posisi normal */
+    }
+}
+
+.kelelawar2, .kelelawar4, .kelelawar6{
+    width: 200px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0; /* Awal transparan */
+    transform: translateX(-50px);
+    animation: kanan 3s ease-in-out infinite; /* Menambahkan animasi */
+    
+}
+.kelelawar2{
+    animation-delay: 1.5s;
+    right: 0;
+    bottom: 0;
+}
+.kelelawar4{
+    animation-delay: 2s;
+    right: 0;
+    bottom: 10%;
+}
+.kelelawar6{
+    animation-delay: 2.8s;
+    right: 0;
+    bottom: 15%;
+}
+
+@keyframes kanan{
+    from{
+        opacity: 0;
+        transform: translate(0,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(-800%,-500%);
+    }
+}
+
+.kelelawar7,.kelelawar8,.kelelawar9,.kelelawar10,.kelelawar11,.kelelawar12,.kelelawar13,.kelelawar14,.kelelawar15{
+    width: 200px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    opacity: 0; /* Awal transparan */
+    transform: translateX(-50px);
+    animation: kiri 2s ease-in-out infinite;
+}
+
+.kelelawar7{
+    animation-delay: 2s;
+    right: 0;
+    bottom: 15%;
+}
+
+.kelelawar8{
+    animation-delay: 2.5s;
+    right: 0;
+    bottom: 18%;
+}
+
+.kelelawar9{
+    animation-delay: 2.8s;
+    right: 0;
+    bottom: 17%;
+}
+
+.kelelawar10{
+    animation-delay: 3s;
+    right: 0;
+    bottom: 13%;
+}
+
+.kelelawar11{
+    animation-delay: 3.2s;
+    right: 0;
+    bottom: 2%;
+}
+
+.kelelawar12{
+    animation-delay: 3.5s;
+    right: 0;
+    bottom: 7%;
+}
+.kelelawar13{
+    animation-delay: 3.8s;
+    right: 0;
+    bottom: 11%;
+}
+.kelelawar14{
+    animation-delay: 4s;
+    right: 0;
+    bottom: 5%;
+}
+.kelelawar5{
+    animation-delay: 4.2s;
+    right: 0;
+    bottom: 4%;
+}
+
+
+
+
+@keyframes kiri{
+    from{
+        opacity: 0;
+        transform: translate(0,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(-800%,3%);
+    }
+}
+
+
+
+.content h1::after {
+    content: '' ;
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    width: 10px;
+    height: 20px;
+    background: darkred;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px darkred;
+    animation: drip 1.5s infinite ease-in-out;
+}
+
+.content p::after {
+    content: '' ;
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    width: 10px;
+    height: 20px;
+    background: darkred;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px darkred;
+    animation: drip 1.5s infinite ease-in-out;
+}
+
+@keyframes drip {
+    0% { transform: translateY(0); opacity: 1; }
+    70% { transform: translateY(25px); opacity: 0.7; }
+    100% { transform: translateY(35px); opacity: 0; }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 102%;
+    }
+}
+
+
+.content h1 span{
+    color: red;
+}   
+
+button{
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    color: darkred;
+    box-shadow: 2px 2px 15px lightslategray;
+    transition: 1s;
+}
+
+button:hover{
+    background-color: rgba(0,0,0,0.9);
+}
+
+button i{
+    margin-left: 10px;
+}
